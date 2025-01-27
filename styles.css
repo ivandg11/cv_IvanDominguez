@@ -3,7 +3,6 @@
 }
 .inicio {
   color: #fff;
-  background-image: url(https://images.pexels.com/photos/11737041/pexels-photo-11737041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 .card {
   font-family: 'Courier New', Courier, monospace;
@@ -187,6 +186,7 @@ p:hover::before {
   padding: 20px;
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-right: 60px;
 }
 .info-container:hover {
   box-shadow: 0px 0px 30px 1px rgba(168, 0, 183, 0.977);
@@ -249,4 +249,32 @@ p:hover::before {
     width: 30px;
     height: 30px;
   }
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: Arial, sans-serif;
 }
